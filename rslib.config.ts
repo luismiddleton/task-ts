@@ -4,6 +4,9 @@ export default defineConfig({
   lib: [
     {
       format: "esm",
+      dts: {
+        bundle: true,
+      },
       output: {
         minify: {
           js: true,
@@ -24,6 +27,9 @@ export default defineConfig({
     },
     {
       format: "cjs",
+      dts: {
+        bundle: true,
+      },
       output: {
         minify: {
           js: true,
