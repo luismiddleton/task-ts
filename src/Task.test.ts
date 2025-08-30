@@ -3,7 +3,7 @@ import { Task, TaskStatus } from './Task';
 
 describe('Task', () => {
   it('should create a pending Task', () => {
-    const task = new Task<number>((resolve) => {
+    const task = new Task<number>(() => {
       // do not resolve immediately
     });
     expect(task).toBeInstanceOf(Task);
@@ -51,11 +51,20 @@ describe('Task', () => {
     expect(task.isSucceeded()).toBe(true);
   });
 
-  it('should create a failure Task via static method', () => {
+  it('should create a failure Task via static method', async () => {
     const err = new Error('static fail');
     const task = Task.failure<number>(err);
+    await expect(task.run(() => {})).rejects.toThrow('static fail');
     expect(task.getStatus()).toBe(TaskStatus.FAILED);
     expect(task.getError()).toBe(err);
     expect(task.isFailed()).toBe(true);
+  });
+
+  it('should call catch on failure', async () => {
+    const err = new Error('catch fail');
+    const task = Task.failure<number>(err);
+    let caught: Error | undefined;
+    await task.catch(e => { caught = e; });
+    expect(caught).toBe(err);
   });
 });
