@@ -12,12 +12,12 @@ Instead of managing loading, success, and error states separately, you can encap
 
 - **Synchronous Status:** Immediately check if a task is `pending`, `succeeded`, or `failed`.
 - **Type-Safe:** Full TypeScript support for result and error types.
-- **Promise-Based:** Built on top of native `Promise`s, so you can still use `then` and `catch`.
+- **Promise-Based:** Built on top of native `Promise`, so you can still use `then` and `catch`.
 - **Lightweight:** No external dependencies.
 
 ## Motivation
 
-The primary motivation for `task-ts` is to provide a richer interface for managing asynchronous operations. While native `Promise`s are excellent for handling a future value, they don't offer a way to synchronously inspect the state of the underlying computation. `Task` fills this gap by encapsulating the entire lifecycle of an async operation, making it easy to handle loading, success, and error states without boilerplate.
+The primary motivation for this library is to provide a richer interface for managing asynchronous operations. While native `Promise`s are excellent for handling a "future" value, they don't offer a way to synchronously inspect the state of the underlying computation. `Task` fills this gap by encapsulating the entire lifecycle of an async operation, making it easy to handle loading, success, and error states without boilerplate.
 
 ## Basic Usage
 

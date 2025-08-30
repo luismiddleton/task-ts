@@ -9,7 +9,7 @@ export default defineConfig({
           js: true,
           jsOptions: {
             minimizerOptions: {
-              mangle: false,
+              mangle: true,
               minify: true,
               compress: {
                 toplevel: true,
@@ -29,7 +29,7 @@ export default defineConfig({
           js: true,
           jsOptions: {
             minimizerOptions: {
-              mangle: false,
+              mangle: true,
               minify: true,
               compress: {
                 toplevel: true,
@@ -43,7 +43,4 @@ export default defineConfig({
       },
     },
   ],
-  dts: {
-    removeComments: false,
-  },
 });
