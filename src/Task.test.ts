@@ -1,4 +1,3 @@
-import { describe, it, expect } from 'vitest';
 import { Task, TaskStatus } from './Task';
 
 describe('Task', () => {
