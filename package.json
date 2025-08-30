@@ -15,6 +15,7 @@
     }
   },
   "scripts": {
+    "test": "vitest",
     "build": "rslib build",
     "build:watch": "rslib build --watch"
   },
@@ -24,6 +25,7 @@
   "devDependencies": {
     "@microsoft/api-extractor": "^7.52.11",
     "@rslib/core": "^0.12.4",
-    "typescript": "^5.0.0"
+    "typescript": "^5.0.0",
+    "vitest": "^3.2.4"
   }
 }
