@@ -15,9 +15,10 @@
     }
   },
   "scripts": {
-  "test": "vitest",
-  "coverage": "vitest --coverage",
+    "test": "vitest",
+    "coverage": "vitest --coverage",
     "build": "rslib build",
+    "build:doc": "typedoc",
     "build:watch": "rslib build --watch"
   },
   "keywords": [],
@@ -27,6 +28,7 @@
     "@microsoft/api-extractor": "^7.52.11",
     "@rslib/core": "^0.12.4",
     "@vitest/coverage-v8": "^3.2.4",
+    "typedoc": "^0.28.11",
     "typescript": "^5.0.0",
     "vitest": "^3.2.4"
   }
