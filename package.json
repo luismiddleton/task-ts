@@ -1,0 +1,28 @@
+{
+  "name": "@luism/task",
+  "version": "0.0.0",
+  "description": "Library for managing deferred asynchronous operations",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "scripts": {
+    "build": "rslib build",
+    "build:watch": "rslib build --watch"
+  },
+  "keywords": [],
+  "author": "Luis Middleton",
+  "license": "MIT",
+  "devDependencies": {
+    "@rslib/core": "^0.12.4",
+    "typescript": "^5.0.0"
+  }
+}
