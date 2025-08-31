@@ -18,7 +18,7 @@
     "test": "vitest",
     "coverage": "vitest --coverage",
     "build": "rslib build",
-    "build:doc": "typedoc ./src/index.ts",
+    "build:doc": "typedoc",
     "build:watch": "rslib build --watch"
   },
   "keywords": [],
