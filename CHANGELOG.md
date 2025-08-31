@@ -1,4 +1,4 @@
-# @luism/task
+# @luism/task-ts
 
 ## 0.1.1
 
