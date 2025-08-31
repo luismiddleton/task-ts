@@ -25,6 +25,10 @@
   "keywords": [],
   "author": "Luis Middleton",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luismiddleton/task-ts.git"
+  },
   "devDependencies": {
     "@changesets/cli": "^2.29.6",
     "@microsoft/api-extractor": "^7.52.11",
