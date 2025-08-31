@@ -17,14 +17,14 @@ Instead of managing loading, success, and error states separately, you can encap
 
 ## Motivation
 
-The primary motivation for this library is to provide a richer interface for managing asynchronous operations. While native `Promise`s are excellent for handling a "future" value, they don't offer a way to synchronously inspect the state of the underlying computation. `Task` fills this gap by encapsulating the entire lifecycle of an async operation, making it easy to handle loading, success, and error states without boilerplate.
+The primary motivation for this library is to provide a richer interface for managing asynchronous operations. While native Promises are excellent for handling a "future" value, they don't offer a way to synchronously inspect the state of the underlying computation. `Task` fills this gap by encapsulating the entire lifecycle of an async operation, making it easy to handle loading, success, and error states without boilerplate.
 
 ## Basic Usage
 
 Creating a `Task` is similar to creating a `Promise`:
 
 ```typescript
-import { Task } from '@luism/task';
+import { Task } from '@luism/task-ts';
 
 const myTask = new Task<string, Error>((resolve, reject) => {
   setTimeout(() => {
